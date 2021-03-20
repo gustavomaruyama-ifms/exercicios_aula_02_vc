@@ -12,6 +12,6 @@ for x in range(w):
         red_c = int(img[x,y,0])
         green_c = int(img[x,y,2])
         blue_c = int(img[x,y,1])
-        new_image[w,y] = (max(red_c, blue_c, green_c) + min (red_c, blue_c, green_c))/2
+        new_image[x,y] = (max(red_c, blue_c, green_c) + min (red_c, blue_c, green_c))/2
 
 io.imsave('lenna-brightness.jpg', new_image)
